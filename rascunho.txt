@@ -1,0 +1,24 @@
+<FlatList 
+data = {geral}
+keyExtractor ={item => item.title}
+renderItem = {({item}) => <View>
+
+<FlatList
+data = {debt}
+keyExtractor ={item => item.name}
+renderItem = {({item}) => <View style = {styles.name}>
+<Text style = {styles.name}>{item}</Text> </View>}
+/>
+
+<FlatList
+data = {conta}
+keyExtractor ={item => item.id}
+renderItem = {({item}) => <View style = {styles.debtnum}>
+<Text style={styles.num}>{item}</Text>
+</View>}
+/>
+
+
+
+</View>}
+/> 
